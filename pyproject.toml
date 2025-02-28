@@ -7,7 +7,7 @@ name = "humanitarian-analysis"
 version = "0.1.0"
 description = "Library for humanitarian situation analysis using NLP"
 authors = [
-    {name = "Reporter.ai", email = "reporter·ai@boldcode.io"},
+    {name = "Reporter.ai", email = "reporter.ai@boldcode.io"},
 ]
 readme = "README.md"
 requires-python = ">=3.7"
