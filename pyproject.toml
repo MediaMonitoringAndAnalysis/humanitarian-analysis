@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "humanitarian-analysis"
+version = "0.1.0"
+description = "Library for humanitarian situation analysis using NLP"
+authors = [
+    {name = "Reporter.ai", email = "reporter·ai@boldcode.io"},
+]
+readme = "README.md"
+requires-python = ">=3.7"
+license = {text = "AGPL-3.0"}
+dependencies = [
+    "datasets",
+    "pandas",
+    "tqdm",
+    "numpy",
+]
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[project.urls]
+Homepage = "https://reporterai.org"
+
+[tool.pip]
+dependencies = [
+    "git+https://github.com/MediaMonitoringAndAnalysis/data_generation.git",
+    "git+https://github.com/MediaMonitoringAndAnalysis/embeddings_generator.git",
+]

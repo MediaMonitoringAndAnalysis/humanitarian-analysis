@@ -13,9 +13,7 @@ setup(
         "pandas",
         "tqdm",
         "numpy",
-        "git+https://github.com/MediaMonitoringAndAnalysis/data_generation.git",
-        "git+https://github.com/MediaMonitoringAndAnalysis/embeddings_generator.git",
-        # Add other dependencies as needed
+        # Git dependencies removed from here
     ],
     python_requires=">=3.7",
     license="AGPL-3.0",
