@@ -5,7 +5,7 @@ setup(
     version="0.1.0",
     description="Library for humanitarian situation analysis using NLP",
     author="Reporter.ai (https://reporterai.org)",
-    author_email="reporter·ai@boldcode.io",
+    author_email="reporter.ai@boldcode.io",
     packages=find_packages(where="src"),
     package_dir={"": "src"},
     install_requires=[
