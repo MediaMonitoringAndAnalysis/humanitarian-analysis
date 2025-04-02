@@ -88,9 +88,9 @@ def _get_questions_embeddings(level1_to_level2_definitions_and_questions):
             problem_questions = level3_data["problems"]
             all_problem_questions.append(problem_questions)
     all_embeddings = embeddings_generator(all_problem_questions)
-    for idx, embedding in enumerate(all_embeddings):
+    for idx, one_embedding in enumerate(all_embeddings):
         problem_questions = all_problem_questions[idx]
-        questions_embeddings[problem_questions] = [embedding]
+        questions_embeddings[problem_questions] = one_embedding
     return questions_embeddings
 
 
