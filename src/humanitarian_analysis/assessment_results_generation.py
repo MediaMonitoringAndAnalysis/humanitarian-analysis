@@ -173,6 +173,7 @@ def generate_assessment_results(
                                 # question_answering_retrieval_system_prompt=question_answering_retrieval_system_prompt ,
                                 text_col="Extraction Text",
                                 show_progress_bar=False,
+                                df_relevant_columns=["Extraction Text", "Document Title", "Document Publishing Date", "File Name", "Document Source"]
                             )[0]
                             if one_results["final_answer"] != "-":
 
