@@ -182,6 +182,7 @@ def generate_assessment_results(
                                 one_results["doc_id"] = one_doc_id
                                 one_results["doc_title"] = doc_title
                                 one_results["task"] = task
+                                one_results["country"] = country
                                 one_results["pillar_level1_name"] = problem_title.split(
                                     "->"
                                 )[0]
@@ -213,7 +214,7 @@ def generate_assessment_results(
                             print(df_one_level3)
 
                     pbar.update(1)
-
+            
             all_results_df = pd.concat([all_results_df, results_one_doc])
 
             all_results_df.to_csv(
